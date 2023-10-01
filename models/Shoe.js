@@ -1,9 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Shoes extends Model {}
-
-Shoes.init({
+const Shoes = sequelize.define("Shoes", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -46,14 +44,14 @@ Shoes.init({
     allowNull: true
   },
   Width: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: true
-  },
-    sequelize,
-    timestamps: false,
-    underscored: true,
-    modelName: 'Shoes',
   }
-);
+}, {
+  sequelize,  
+  timestamps: false,
+  underscored: true,
+  modelName: 'Shoes',
+});
 
 module.exports = Shoes;

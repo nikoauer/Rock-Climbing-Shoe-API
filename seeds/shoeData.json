@@ -2659,7 +2659,7 @@
       "UkSize": "3",
       "EuroSize": "35.5",
       "BoxSize": null,
-      "SoleSize": "-",
+      "SoleSize": null,
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
