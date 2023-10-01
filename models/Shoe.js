@@ -33,6 +33,10 @@ Shoes.init({
     type: DataTypes.INTEGER,
     allowNull: true
   },
+  BoxSize: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
   SoleSize: {
     type: DataTypes.INTEGER,
     allowNull: true
